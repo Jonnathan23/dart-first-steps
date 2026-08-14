@@ -4,6 +4,9 @@ void main() {
 
   print(addTwoNumbers(4, 7));
   print(addTwoNumbersLamda(4, 7));
+  
+  print(greetPerson(name: 'Fernando'));
+  
 }
 
 String greetEveryOne() {
@@ -27,4 +30,8 @@ int addTwoNumbersOptional1(int a, [int? b]) {
   b ??= 0;
   
   return a + b;
+}
+
+String greetPerson({ required String name, String message = 'Hola' }) {
+  return '$message, $name';
 }
